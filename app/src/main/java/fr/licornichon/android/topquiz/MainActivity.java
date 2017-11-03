@@ -97,8 +97,6 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 sendSMS(phoneNumber, message+insult+" !");
-                Toast.makeText(getBaseContext(), "\""+message+insult+" !\" to : "+phoneNumber,
-                        Toast.LENGTH_LONG).show();
                 mResultText.setText(message+insult+" !");
             }
         });
