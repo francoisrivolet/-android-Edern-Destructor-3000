@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
     private EditText mNumberInput;
     private Button mPlayButton;
     private Button mSendButton;
-    private String name = "Edern";
     private String message = "tu es un";
     private String insult;
     private String phoneNumber = "0646898343";
@@ -58,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
         mPlayButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                phoneNumber = mNumberInput.getText().toString();
                 Toast.makeText(getBaseContext(), "phonenumber : "+mNumberInput.getText().toString(),
                         Toast.LENGTH_LONG).show();
             }
@@ -69,31 +69,30 @@ public class MainActivity extends AppCompatActivity {
                 Random random = new Random();
                 int i = random.nextInt(7);
 
-
                 switch (i){
                     case 0 :
-                        insult = "gros PD";
+                        insult = " gros PD";
                         break;
                     case 1 :
-                        insult = "connard";
+                        insult = " connard";
                         break;
                     case 2 :
-                        insult = "gros BATARD";
+                        insult = " gros BATARD";
                         break;
                     case 3 :
-                        insult = "e grosse pute";
+                        insult = "e puuuuuuuteuuuuuh";
                         break;
                     case 4 :
-                        insult = "noob";
+                        insult = " noob";
                         break;
                     case 5 :
-                        insult = "e tafiole";
+                        insult = " e tafiole";
                         break;
                     case 6 :
-                        insult = "bon gros Tocard";
+                        insult = " bon gros Tocard";
                         break;
                     default:
-                        insult = "kiki mou";
+                        insult = " kiki mou";
                         break;
                 }
 
