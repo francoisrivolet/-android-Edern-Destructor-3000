@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
                         insult = " noob";
                         break;
                     case 5 :
-                        insult = " e tafiole";
+                        insult = "e tafiole";
                         break;
                     case 6 :
                         insult = " bon gros Tocard";
